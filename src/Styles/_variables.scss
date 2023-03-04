@@ -1,0 +1,60 @@
+/* Colors */
+$gray: #5C5C5E;
+$grayLight: #CACAD6;
+$white: #F6F4F5;
+$black: #070707;
+/* Gradient */
+$mainGradientColor: #BC10D8;
+$gradient: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+
+/* Container */
+$containerWidth: 1240px;
+$containerPadding: (20/16)+rem;
+
+/* Gutters */
+$fullGutter: 20px;
+$halfGutter: 10px;
+
+/* Breakpoints */
+$breakpoint1450: 1449.98px;
+$breakpoint1200: 1199.98px;
+$breakpoint900: 899.98px;
+$breakpoint600: 599.98px;
+$breakpoint420: 419.98px;
+
+/* Fonts */
+$mainFont: 'Helvetica';
+
+/* Transition */
+$mainTransition: .3s;
+
+/* Text */
+@mixin menuText {
+    font-size: (16/16)+rem;
+}
+@mixin h0Text {
+    font-size: (96/16)+rem;
+}
+@mixin h1Text {
+    font-size: (36/16)+rem;
+}
+@mixin h1BigText {
+    font-size: (36/16)+rem;
+    text-transform: uppercase;
+}
+@mixin h2Text {
+    font-size: (24/16)+rem;
+}
+@mixin Ag13Text {
+    font-size: (13/16)+rem;
+}
+@mixin Ag16Text {
+    font-size: (16/16)+rem;
+}
+@mixin buttonText {
+    font-size: (16/16)+rem;
+    font-weight: 700;
+}
+
+/* Burger */
+$bergerMenuWidth: 40vw;

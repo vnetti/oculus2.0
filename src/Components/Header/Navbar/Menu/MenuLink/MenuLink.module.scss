@@ -1,0 +1,16 @@
+/*Import variables */
+@import "Styles/variables";
+
+.itemLink {
+    @include menuText;
+    color: $gray;
+    text-transform: uppercase;
+    transition: color $mainTransition;
+
+    &:hover {
+        color: $grayLight;
+    }
+    &:active {
+        color: $black;
+    }
+}

@@ -1,0 +1,10 @@
+/* Import variables */
+@import "Styles/variables";
+
+.logo {
+    text-align: center;
+
+    @media (max-width: $breakpoint900) {
+        grid-column: 2/3;
+    }
+}

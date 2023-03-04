@@ -1,0 +1,19 @@
+body {
+    font-family: $mainFont, sans-serif;
+    line-height: normal;
+    color: $gray;
+}
+
+.container {
+    max-width: $containerWidth;
+    padding: 0 $containerPadding;
+    margin: 0 auto;
+}
+
+.sectionInner {
+    padding: 50px 0;
+}
+
+.sectionTitle {
+    font-size: 36px;
+}

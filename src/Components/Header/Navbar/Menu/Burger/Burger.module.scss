@@ -1,0 +1,49 @@
+/* Import variables */
+@import "Styles/variables";
+
+.burger {
+    display: none;
+
+    @media (max-width: $breakpoint900) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        position: absolute;
+        top: 40px;
+        transform: translate(0, -50%);
+        right: (-2.5rem-1.25rem);
+        background-color: $white;
+        border-radius: 40%;
+        cursor: pointer;
+        transition: $mainTransition ease-in;
+
+        .show {
+            opacity: 1;
+            position: absolute;
+            transition: $mainTransition ease-in;
+        }
+
+        .hide {
+            opacity: 0;
+            transition: opacity $mainTransition ease-in,
+                        transform .6s ;
+        }
+
+        &.active {
+            transform: translate(-50%, -50%);
+            right: (0);
+
+            .show {
+                opacity: 0;
+            }
+
+            .hide {
+                opacity: 1;
+                transform: rotate(720deg);
+            }
+        }
+
+    }
+}

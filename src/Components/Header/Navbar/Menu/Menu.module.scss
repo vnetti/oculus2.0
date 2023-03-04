@@ -1,0 +1,42 @@
+/*Import variables */
+@import "Styles/variables";
+
+.menu {
+    display: flex;
+    gap: $fullGutter;
+    align-items: center;
+
+    @media (max-width: $breakpoint900) {
+        position: absolute;
+        width: $bergerMenuWidth;
+        top: 0;
+        //left: 0;
+        left: -$bergerMenuWidth;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $white;
+        z-index: 10;
+        transition: $mainTransition ease-in;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            transition: backdrop-filter $mainTransition linear;
+        }
+
+        &.active {
+            left: 0;
+
+            &:before {
+                width: 100vw;
+                backdrop-filter: blur(4px);
+                z-index: -10;
+            }
+        }
+    }
+}

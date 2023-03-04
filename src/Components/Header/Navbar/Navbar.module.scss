@@ -1,0 +1,10 @@
+/*Import variables */
+@import "Styles/variables";
+
+.nav {
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    transition: height $mainTransition;
+}
