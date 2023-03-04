@@ -1,0 +1,18 @@
+/*Import variables */
+@import "Styles/variables";
+
+.buttons {
+    composes: btn from "/src/Styles/_global.scss";
+}
+
+.buy {
+    composes: btn__buy from "/src/Styles/_global.scss";
+}
+
+.price {
+    composes: btn__price from "/src/Styles/_global.scss";
+}
+
+.underText {
+    composes: btn__under-text from "/src/Styles/_global.scss";
+}

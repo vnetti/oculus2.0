@@ -51,5 +51,11 @@
             color: $black;
         }
     }
+
+    &.empty {
+        &::before {
+            display: none;
+        }
+    }
 }
 

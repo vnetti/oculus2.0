@@ -1,3 +1,30 @@
 /*Import variables */
 @import "Styles/variables";
 
+.hero {
+    height: calc(100vh - 80px);
+    max-height: (1000/16)+rem;
+    min-height: (700/16)+rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.inner {
+    padding-top: 23vh;
+}
+
+.title {
+    @include h0Text;
+    margin-bottom: (10/16)+rem;
+}
+
+.offerTitle {
+    @include h1Text;
+    margin-bottom: (4/16)+rem;
+}
+
+.offerText {
+    @include Ag13Text;
+    margin-bottom: (50/16)+rem;
+}

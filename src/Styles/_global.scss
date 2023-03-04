@@ -1,3 +1,18 @@
+@import "Styles/variables";
+
+html {
+    font-size: 16px;
+
+    @media (max-width: $breakpoint900) {
+        font-size: 12px;
+    }
+
+    @media (max-width: $breakpoint600) {
+        font-size: 10px;
+    }
+}
+
+
 body {
     font-family: $mainFont, sans-serif;
     line-height: normal;
@@ -16,4 +31,39 @@ body {
 
 .sectionTitle {
     font-size: 36px;
+}
+
+.btn {
+    text-transform: uppercase;
+    @include buttonText;
+    display: flex;
+    margin-bottom: (10/16)+rem;
+
+    // btn__buy
+    &__buy {
+
+        color: $white;
+        padding: (21/16)+rem (111/16)+rem;
+        background: $mainGradientColor;
+        background: $gradient;
+        transition: $mainTransition;
+        box-shadow: inset 0 0 10px -5px rgba($color: $black, $alpha: 0);
+
+        &:hover {
+            color: $grayLight;
+            box-shadow: inset 0 0 10px -5px $black;
+        }
+    }
+
+    // btn__price
+    &__price {
+        padding: (21/16)+rem (106/16)+rem;
+        border: 1px solid $mainGradientColor;
+        border-image: $gradient;
+        border-image-slice: 1;
+    }
+
+    &__under-text {
+        @include Ag13Text;
+    }
 }

@@ -4,6 +4,9 @@
 .logo {
     text-align: center;
 
+    img {
+        max-width: (235/12)+rem;
+    }
     @media (max-width: $breakpoint900) {
         grid-column: 2/3;
     }
