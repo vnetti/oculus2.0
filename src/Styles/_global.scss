@@ -38,6 +38,11 @@ body {
     @include buttonText;
     display: flex;
     margin-bottom: (10/16)+rem;
+    text-align: center;
+
+    @media (max-width: $breakpoint420) {
+        flex-direction: column;
+    }
 
     // btn__buy
     &__buy {
@@ -65,5 +70,9 @@ body {
 
     &__under-text {
         @include Ag13Text;
+
+        @media (max-width: $breakpoint420) {
+            font-size: (12/16)+rem;
+        }
     }
 }
