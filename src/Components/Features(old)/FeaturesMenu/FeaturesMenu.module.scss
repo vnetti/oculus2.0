@@ -1,0 +1,31 @@
+/*Import variables */
+@import "Styles/variables";
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: $fullGutter;
+    grid-column: 1/2;
+}
+
+.item {
+    cursor: pointer;
+    @include buttonText;
+    transition: color $mainTransition;
+
+    &.active {
+        color: $black;
+    }
+
+    &:hover {
+        color: $grayLight;
+    }
+
+    &Active {
+        color: $black;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}

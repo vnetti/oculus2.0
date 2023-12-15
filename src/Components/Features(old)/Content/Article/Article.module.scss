@@ -1,0 +1,15 @@
+/*Import variables */
+@import "Styles/variables";
+
+.article {
+    grid-column: 2;
+
+    h3 {
+        @include h2Text;
+        margin-bottom: $halfGutter;
+    }
+
+    p {
+        @include Ag16Text;
+    }
+}

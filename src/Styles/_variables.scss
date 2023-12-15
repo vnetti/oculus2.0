@@ -31,6 +31,7 @@ $mainTransition: .3s;
 /* Text */
 @mixin menuText {
     font-size: (16/16)+rem;
+    text-transform: uppercase;
 }
 @mixin h0Text {
     font-size: (96/16)+rem;

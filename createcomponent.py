@@ -82,9 +82,11 @@ class JSXFileCreator(FileCreator):
         self.get_absolute_filename().write_text(
             f"""import classes from "./{self._element.name}.module.scss"
 
-const {self._element.name} = (props) => (
-  <div>{self._element.name}</div>
-)
+const {self._element.name} = (props) => {{
+    return (
+        <div>{self._element.name}</div>
+    )
+}}
 
 export default {self._element.name}
         """.strip())

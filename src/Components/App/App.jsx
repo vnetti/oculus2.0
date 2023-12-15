@@ -2,6 +2,7 @@ import classes from './App.module.scss';
 import Header from "../Header/";
 import {useState} from "react";
 import Hero from "../Hero";
+// import Features(old) from "../Features";
 
 function App() {
     const [menuActive, setMenuActive] = useState(false);
@@ -10,6 +11,7 @@ function App() {
       <Header menuActive={menuActive} setMenuActive={setMenuActive} />
         <main>
             <Hero />
+            {/*<Features />*/}
         </main>
     </div>
   );

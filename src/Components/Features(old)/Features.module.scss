@@ -1,0 +1,14 @@
+/*Import variables */
+@import "Styles/variables";
+
+.wrapper {
+    padding-top: 100px;
+
+    display: grid;
+    grid-template-columns: minmax(auto, 280px) 2fr 1fr;
+    gap: $fullGutter;
+}
+
+.heading {
+    max-width: 330px;
+}
